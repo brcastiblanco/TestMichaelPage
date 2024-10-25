@@ -1,23 +1,17 @@
-import { getAllTodos } from "./Components/apis";
-import AddTask from "./Components/AddTask";
-import TodoList from "./Components/TodoList";
+import Link from 'next/link'
 
-//const dataFilePath = path.join(process.cwd(), 'json/userData.json');
-
-export default async function Home() {
-  const tasks = await getAllTodos();
-
- // console.log(tasks);
-  
- return (
-    <main className="max-w-4xl mx-auto mt-4">
-      <div className="text-center my-5 flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Tasks List</h1>
-        <AddTask />
-      </div>
-      <div className="text-center">
-        <TodoList tasks={tasks} />
-      </div>
-    </main>
-  );
+export default function Home() {
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center px-5">
+      <h1 className="text-xl sm:text-2xl md:text-4xl font-bold">
+        Bienvenido a la aplicación de Posts
+      </h1>
+      <p className="mt-4 text-xs sm:text-sm md:text-base">
+        Esta aplicación muestra una lista de publicaciones obtenidas de una API pública.
+      </p>
+      <Link href="/listado" className="mt-6 bg-blue-500 text-white px-4 py-2 rounded-md text-xs sm:text-sm md:text-base">
+        Ver Listado
+      </Link>
+    </div>
+  )
 }

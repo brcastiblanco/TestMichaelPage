@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Test de Publicaciones
 
-## Getting Started
+Este proyecto es una aplicación para gestionar publicaciones, donde los usuarios pueden crear, leer, editar y eliminar publicaciones. La aplicación está construida con **Next.js** y utiliza **Local Storage** para almacenar los datos de manera persistente.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Visualización de publicaciones**: Muestra una lista de publicaciones con la opción de buscar por título o cuerpo.
+- **Agregar nuevas publicaciones**: Permite a los usuarios crear nuevas publicaciones con un título y un cuerpo.
+- **Editar publicaciones**: Los usuarios pueden actualizar el título y el cuerpo de las publicaciones existentes.
+- **Eliminar publicaciones**: Opción para eliminar publicaciones de la lista.
+- **Almacenamiento local**: Las publicaciones se almacenan en el Local Storage del navegador para persistencia.
+- **Imágenes en publicaciones**: Cada publicación puede tener una imagen asociada.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: Framework de React para la construcción de aplicaciones web.
+- **Tailwind CSS**: Utilizado para el diseño de la interfaz.
+- **API JSONPlaceholder**: Para simular la obtención de datos.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Instalación
 
-## Learn More
+Sigue estos pasos para instalar y ejecutar la aplicación en tu máquina local:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Navega al directorio del proyecto**:
+   ```bash
+   cd tu-repositorio
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Instala Node.js**: Si no tienes Node.js instalado, descárgalo e instálalo desde [nodejs.org](https://nodejs.org/).
 
-## Deploy on Vercel
+4. **Instala las dependencias**:
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Inicia la aplicación**:
+   ```bash
+   npm run dev
+   ```
+   La aplicación estará disponible en `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+6. **Accede a la aplicación**:
+   - Abre tu navegador y ve a `http://localhost:3000` para interactuar con la aplicación.
+
+## Uso
+
+- Abre la aplicación en tu navegador.
+- Utiliza el formulario para agregar nuevas publicaciones.
+- Haz clic en una publicación para editarla o eliminarla.
+- Utiliza la barra de búsqueda para encontrar publicaciones por título o cuerpo.
